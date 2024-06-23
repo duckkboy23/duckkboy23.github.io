@@ -565,7 +565,7 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label
         flex-basis: 100%;
 
         & img {
-            max-width: 300px;
+            max-width: 275px;
             border-radius: 20px;
         }
     }
@@ -575,7 +575,7 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label
     }
 
     .tab-links {
-        font-size: 2.2vh;
+        font-size: 14px;
         position: relative;
         transition: 0.5s ease-in-out;
         border-bottom: 3px dotted;
@@ -695,7 +695,7 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label
     }
 
     .intro {
-        margin-top: 25%;
+        margin-top: 15%;
     }
 
     .navlist, #datetime {
@@ -719,7 +719,7 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label
     }
 
     .tab-links {
-        font-size: 2.4vh;
+        font-size: 14px;
         position: relative;
         transition: 0.5s ease-in-out;
         border-bottom: 3px dotted;
