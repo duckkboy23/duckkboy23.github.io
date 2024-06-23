@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>duckkboy23</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/885831bc78.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="loader"></div>
+    <section id="home">
+        <div class="container">
+            <nav>
+                <img src="/images/logo.jpg" href="#" class="logo" />
+                <ul class="navlist">
+                    <li><a href="#home" class="home active">Home</a></li>
+                    <li><a href="#about" class="about">About Me</a></li>
+                    <li><a href="#project" class="project">Projects</a></li>
+                    <li><a href="#blog" class="blog">Blog</a></li>
+                    <li><a href="#contact" class="contact">Contact</a></li>
+                </ul>
+                <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                    <ul class="mobile-menu">
+                        <li><a href="#home" class="home active">Home</a></li>
+                        <li><a href="#about" class="about">About Me</a></li>
+                        <li><a href="#project" class="project">Projects</a></li>
+                        <li><a href="#blog" class="blog">Blog</a></li>
+                        <li><a href="#contact" class="contact">Contact</a></li>
+                    </ul>
+                </div>
+                <p id="datetime"></p>
+            </nav>
+            <div class="intro">
+                <h1>Hi, I'm <br /><span class="myName">Taes Padhihary</span>&#128512</h1>
+                <h5>Apparently, I am google-able as well &#128533</h5>
+            </div>
+            <button id="know-more">
+                <a href="#about">Get to know me better <i class="fa-solid fa-arrow-right"></i></a>
+            </button>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about1">
+                    <img src="/images/pic_about.jpg" />
+                </div>
+                <div class="about2">
+                    <h1>About Me</u></h1>
+                    <br />
+                    <p class="myIntro">
+                        Some of my friends call me 23 (some day I'll make a separate blog post for this).
+                        Except this website, I'm pretty minimalistic in real life.
+                        Due to lack of projects, this website will appear to be more <i>personalized</i>
+                        rather than being <i>professional</i>.
+                        Anyways, I hope you'll find me funny.
+                        If you don't, just remember that the <a href="https://en.wiktionary.org/wiki/anatidaephobia"
+                            target="_blank">duck is always watching.</a>
+                        <br />
+                        You can find some information about me by clicking on the following tabs:
+                    </p>
+                    <div class="tab-titles">
+                        <ul>
+                            <li>
+                                <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                            </li>
+                            <li>
+                                <p class="tab-links" onclick="opentab('interests')">Interests</p>
+                            </li>
+                            <li>
+                                <p class="tab-links" onclick="opentab('studies')">Studies</p>
+                            </li>
+                            <li>
+                                <p class="tab-links" onclick="opentab('awards')">Awards</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="skills" class="tab-contents">
+                        <ul>
+                            <li>
+                                Good at Maths<br />
+                                <span>Did quite some amount of negligible (and irrelevant) work in this field. <br />
+                                    More info in blog.</span>
+                            </li>
+                            <li>
+                                Web Development<br />
+                                <span>Learning.</span>
+                            </li>
+                            <li>
+                                Gaslighting ChatGPT<br />
+                                <span>One of the many experts of this field.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="interests" class="tab-contents">
+                        <p class="xd-fix">
+                            Some maybe highly unprofessional to mention here. But, I'll do it anyways. <br />
+                        </p>
+                        <ul>
+                            <li>
+                                Riddles and Puzzles <br />
+                                <span>
+                                    I call them rizzles, due to personal problems. <br />
+                                    The decryption part is fun, though.
+                                </span>
+                            </li>
+                            <li>
+                                Marvel<br />
+                                <span>14000605 reasons to love the friendly neighbourhood.</span>
+                            </li>
+                            <li>
+                                <a href="https://www.netflix.com/in/title/70153394" target="_blank">Psych</a><br />
+                                <span>
+                                    One of my most favorite series of all time. <br />
+                                    It is highly underrated. <br />
+                                    If your opinion differs, then <i>suck it</i>.
+                                </span>
+                            </li>
+                            <li>
+                                Tennis <br />
+                                <span>Fantastic sport. However, I am only good enough to watch.</span>
+                            </li>
+                            <li>
+                                <a href="https://www.iplt20.com/" target="_blank">Indian Premier League</a>, and Cricket
+                                <br />
+                                <span>Whistlepodu!</span>
+                            </li>
+                            <li style="color: transparent">
+                                Simping <br />
+                                <span>Sydney Sweeney FC and Anne Hathaway simp club.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="studies" class="tab-contents">
+                        <ul>
+                            <li>
+                                B.Tech. IIT Guwahati<br />
+                                <span>
+                                    Student of <a href="https://iitg.ac.in/" target="_blank">Indian Institute of
+                                        Technology Guwahati</a> (Assam) <br />
+                                    (2023-27)
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="awards" class="tab-contents">
+                        <ul>
+                            <li>
+                                None<br />
+                                <span>Check back later.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <br />
+                    <p class="xd-fix">
+                        Thank you for reading about me. I hope you have a cheerful day ahead.
+                        I look forward to keep adding more <i>professional</i> stuff to this section in near
+                        future.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="project">
+        <div class="container">
+            <div class="project-head">
+                <h1 class="proh1" style="font-family: 'Exo 2', sans-serif">
+                    <span style="color: var(--main-text-color)">
+                        Projects
+                    </span>
+                </h1>
+                <p>
+                    <span style="color: var(--main-text-color)">
+                        I'm presenting some of my currently active works.
+                        Technically, they are not quite relevant.
+                        But, these are special for me.
+                    </span>
+                </p>
+                <div class="work-list">
+                    <div class="work">
+                        <div class="layer-img">
+                            <img src="/images/qotd-dark.png">
+                        </div>
+                        <div class="layer">
+                            <h3><a href="https://openpotd.github.io/" target="_blank">OpenPOTD</a></h3><br />
+                            <p>
+                            <h5>
+                                It is a bot that is used as the judge of a bi-weekly math contest on discord.
+                                I am a part of the committee that chooses the problems.
+                                The bot is present in around 100 servers.
+                                We have conducted 30+ seasons
+                                with an average participation of over 150 contestants per season!
+                            </h5>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <div class="layer-img">
+                            <img src="/images/dools-dark.png">
+                        </div>
+                        <div class="layer">
+                            <h3><a href="https://discord.gg/mPD73zASzz" target="_blank">Dools</a></h3><br />
+                            <p>
+                            <h5>
+                                It is a 1v1 math competition held among the top 16 contestants
+                                of the respective OpenPOTD Season.
+                            </h5>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <div class="layer-img">
+                            <img src="/images/techno-owl.png">
+                        </div>
+                        <div class="layer">
+                            <h3><a href="https://technothlon.techniche.org.in/" target="_blank">Technothlon</a></h3>
+                            <br />
+                            <p>
+                            <h5>
+                                I am a problem curator of Technothlon.
+                                It is a contest designed to test
+                                out-of-the-box-thinking
+                                skills of high school students.
+                            </h5>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    <span style="color: var(--main-text-color)">
+                        These, along with many of my other projects, involved practice of contest-oriented-math
+                        and the LaTeX markup language for documentation. <br />
+                        Apart from these, I'm looking forward to gain experience in technical projects. <br />
+                        If you've any astounding ideas for projects based on web development,
+                        please fill out this <a href="#contact" class="cntfrm">contact form</a>, so that we can get in
+                        touch. <br />
+                    </span>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="blog">
+        <div class="container">
+            <h1>Blog</h1>
+            <p>
+                <span>
+                    COMING SOON!
+                </span>
+            </p>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="conLeft">
+                    <h1>
+                        <span style="color: var(--main-text-color)">
+                            Contact Me
+                        </span>
+                    </h1>
+                    <p>
+                        <span style="color: var(--main-text-color)">
+                            Fill up the form if you have any project ideas. <br />
+                            I'll try to get back to you.
+                        </span>
+                    </p>
+                    <br />
+                    <p class="social">
+                        <span style="color: var(--main-text-color)">
+                            Follow me on
+                            <a href="https://www.x.com/duckkboy23" target="_blank"><i
+                                    class="fa-brands fa-x-twitter"></i></a>
+                        </span>
+                    </p>
+                </div>
+                <div class="conRight">
+                    <form name="submit-to-google-sheet">
+                        <div class="input-group">
+                            <input type="text" id="contact-name" name="Name" placeholder="Farmer Shooty Pants" required>
+                            <label for="contact-name">Your Name</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="contact-email" name="Email" placeholder="Your Email ID" required>
+                            <label for="contact-email">Your Email ID</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea name="Message" id="contact-message" rows="3"
+                                placeholder="Come on, son. Get better at Web Dev." required></textarea>
+                            <label for="contact-message">Feedback</label>
+                        </div>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <h3>Made with <a id="cool" href="#footer"
+                    onClick="document.getElementById('cool').innerHTML='&#128150! Thank you for coming this far &#128512';">&#128148</a>
+            </h3>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
